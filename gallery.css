@@ -1,0 +1,22 @@
+@media screen and (min-width: 900px) {
+  .image {
+    filter: grayscale(100%);
+    border-radius: 0px;
+    transition: all 1s ease;
+  }
+
+  .image:hover {
+    filter: grayscale(0%);
+    padding: 10px;
+    filter: drop-shadow(5px 5px 10px #000);
+    border-radius: 40px;
+    transition: all 1s ease;
+  }
+
+  .image:hover .img-text {
+    visibility: visible;
+  }
+  /* .img-text {
+    display: inline;
+  } */
+}

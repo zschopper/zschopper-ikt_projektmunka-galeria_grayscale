@@ -1,0 +1,59 @@
+/* 600px */
+@media screen and (min-width: 600px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  nav ul {
+    /* display: none; */
+    grid-auto-flow: column;
+  }
+}
+
+/*1024px*/
+@media screen and (min-width: 900px) {
+  nav {
+    position: relative;
+    /* width: 100%;
+    top: 0; */
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  section {
+    grid-template-columns: unset;
+    grid-auto-flow: unset;
+    grid-template-areas:
+      "i1 i2 i3"
+      "i4 i4 i4"
+      "i5 i6 i7"
+      "i8 i8 i8";
+  }
+
+  .image-1 {
+    grid-area: i1;
+  }
+  .image-2 {
+    grid-area: i2;
+  }
+  .image-3 {
+    grid-area: i3;
+  }
+  .image-4 {
+    grid-area: i4;
+  }
+  .image-5 {
+    grid-area: i5;
+  }
+  .image-6 {
+    grid-area: i6;
+  }
+  .image-7 {
+    grid-area: i7;
+  }
+  .image-8 {
+    grid-area: i8;
+  }
+}
